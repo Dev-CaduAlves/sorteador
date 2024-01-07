@@ -1,4 +1,4 @@
-let res = document.querySelector('div#divRes')
+let res = document.querySelector('p#divRes')
 let list = []
 function randomNum(min, max) {
     return Math.floor((Math.random() * max + 1) + min)

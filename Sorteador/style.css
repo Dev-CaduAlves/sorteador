@@ -143,6 +143,11 @@ table.divisao tr:nth-child(2) td:nth-child(1) {
 ul > li::marker {
     color: #372991;
 }
+/* AJUSTE DA DIV */
+
+p #divRes {
+    white-space: normal;
+}
 
 /* ELEMENTOS DE FORMULÁRIO */
 
