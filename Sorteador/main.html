@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteador</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section>
-        <img src="img.png" alt="" srcset="">
+        <img src="img/img.jpeg" alt="" srcset="">
        <p>Sorteador de Número PIB Coqueiros</p>
        <br>
        <label>De:</label>
        <input type="number" name="number" id="idOfNumber" value="1">
        <label>Até: </label>
        <input type="number" name="number2" id="idAte" value="100">
-       <input type="button" value="Sortear" onclick="sortear()">
+       <input type="button" value="Sortear" id="btnSort" onclick="sortear()">
+       <input type="button" class="btn_disabled" name="retry" id="retry" value="Reiniciar" disabled="true">
        <br><br>
        <p id="divRes">
+            Resultado<br>
+            O número sorteado foi:<br>
        </p>
+       <p class="display_none" id="pSorted"></p>
+       <p id="numSorteados"></p>
     </section>
     <footer>
-        <br>&copy; PIB Coqueiros
+        <br><p id="logo">&copy; PIB Coqueiros<br>Criado pelo Pr. Carlos Eduardo</p>
     </footer>
-<script src="javascript.js"></script>
+<script src="js/javascript.js"></script>
 </body>
 </html>

@@ -53,7 +53,7 @@ p {
     text-align: center;
     line-height: 1.5em;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bold
 }
 
 span{
@@ -93,8 +93,11 @@ table {
 }
 
 img {
-    width: 80px;
+    width: 100px;
+    height: 60px;
     float: left;
+    border-radius: 40px;
+    margin-top: 10px;
 }
 
 table th {
@@ -143,10 +146,26 @@ table.divisao tr:nth-child(2) td:nth-child(1) {
 ul > li::marker {
     color: #372991;
 }
+
+
+
 /* AJUSTE DA DIV */
 
-p #divRes {
+#divRes {
+    display: none;
     white-space: normal;
+    width: 400px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#numSorteados {
+    width: 650px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 /* ELEMENTOS DE FORMULÁRIO */
@@ -212,7 +231,7 @@ input[type=reset]:hover {
     background-color: #c27013;
 }
 
-input[type=button], button {
+input[type=button], button, input.btn_enabled {
     width: 100%;
     background-color: #372991;
     font-size: 1em;
@@ -244,4 +263,20 @@ input[type=radio] + label, input[type=checkbox] + label {
     display: inline-block;
     font-size: 1em;
     background-color: rgba(0, 0, 0, 0);
+}
+
+input.btn_disabled, input.btn_disabled:hover {
+    background-color: grey;
+}
+
+#logo {
+    font-size: .8rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+#pNumSorted{
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
